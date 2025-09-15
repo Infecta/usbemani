@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Update apt and install basic tools
 RUN apt update && apt upgrade -y && \
-    apt install -y git make cmake curl tar&& \
+    apt install -y git make cmake curl tar bzip2 && \
     rm -rf /var/lib/apt/lists/* # Space saving operation (Deletes cached package index files)
 
 # Set working Directory
