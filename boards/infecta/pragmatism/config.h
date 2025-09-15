@@ -6,7 +6,7 @@
 // This is done since development boards have overlap across nearly every device.
 // For example, channel "0" for any device (buttons, encoders, etc.) is pin 0.
 // This overlap makes it harder for dev boards to work with layouts versus production boards.
-#define BOARD_DEVELOPMENT
+// #define BOARD_DEVELOPMENT
 
 #define ONBOARD_LED 25 // Pico's onboard LED
 
