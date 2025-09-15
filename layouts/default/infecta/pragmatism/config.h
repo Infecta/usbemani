@@ -4,16 +4,11 @@
 #define BUTTON_CHANNELS   0, 1, 2, 3, 4, 5, 6, 7
 
 /*** Encoders ***/
-#define ENCODER_CHANNELS_REVERSED
 #define ENCODER_CHANNELS                0, 1
 #define ENCODER_FREQUENCY               16000
 #define ENCODER_SAMPLES_UNTIL_VALID     64
 #define ENCODER_DIRECTION_THRESHOLD     1
 #define ENCODER_DIRECTION_HOLD_TIMEOUT  200
-
-/*** RGB ***/
-#define RGB_CHANNELS          0
-#define RGB_FRAMERATE_TARGET  120
 
 /*** USB ***/
 #define USB_BUTTONS_ACTIVE      8

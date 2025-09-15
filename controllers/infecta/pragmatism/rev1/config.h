@@ -8,12 +8,7 @@
 
 /*** Encoders ***/
 #define ENCODERS_ACTIVE   2
-#define ENCODER_PPR       24
-
-/*** RGB ***/
-#define RGB_CHANNELS_ACTIVE   1
-#define RGB_LED_TYPE          WS2812
-#define RGB_LEDS_PER_CHANNEL  32
+#define ENCODER_PPR       600
 
 /*** Chain Inclusion ***/
 #include_next "config.h"
