@@ -4,7 +4,10 @@
 #define CONTROLLER_TYPE sdvx
 
 /*** Buttons ***/
-#define BUTTONS_ACTIVE    8
+#define BUTTONS_ACTIVE    11
+
+/*** Lights ***/
+#define LIGHTS_ACTIVE     10
 
 /*** Encoders ***/
 #define ENCODERS_ACTIVE   2
