@@ -1,2 +1,2 @@
-TARGET_BOARD      ?= infecta/pragmatism/rev1
+TARGET_BOARD      ?= infecta/pragmatism
 TARGET_CONTROLLER ?= infecta/pragmatism/rev1
