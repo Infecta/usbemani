@@ -1,0 +1,10 @@
+services:
+  buildenv:
+    build: .
+    container_name: usbemani_buildenv
+    tty: true
+    volumes:
+      - ./:/root/usbemani
+    environment:
+      - TZ=Asia/Kuala_Lumpur
+      - LANG=C.UTF-8
