@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update && apt upgrade -y && \
     apt install -y git make cmake curl tar bzip2 software-properties-common && \
     add-apt-repository ppa:deadsnakes/ppa && apt update && \
-    apt install python3 python3-pip && \
+    apt install -y python3 python3-pip && \
     rm -rf /var/lib/apt/lists/* # Space saving operation (Deletes cached package index files)
 
 # Set working Directory
