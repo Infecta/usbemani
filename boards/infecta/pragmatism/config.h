@@ -24,7 +24,7 @@
 #define ENCODERS_AVAILABLE 2
 #define ENCODER_PINS \
   [0] = {0,1}, \
-  [1] = {1,2}
+  [1] = {2,3}
 
 #define LIGHT_DRIVER direct
 #define LIGHTS_AVAILABLE 10

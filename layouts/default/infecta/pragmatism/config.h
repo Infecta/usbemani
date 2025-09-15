@@ -21,7 +21,8 @@
 #define USB_LIGHTS_ACTIVE       10
 #define USB_ENCODER_AXES_ACTIVE 2
 #define USB_ENCODER_AXES        USB_Axis_X, USB_Axis_Y
-
+#define USB_STRING_VENDOR_USBEMANI  "Infecta"
+#define USB_STRING_PRODUCT_USBEMANI "PRAGMATiSM"
 /*** Button Combinations ***/
 #define BUTTON_COMBO_ARCH_RESET   0, 1  // BT-A, BT-B
 #define BUTTON_COMBO_KONAMI_CLOUD 6     // Start
