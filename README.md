@@ -35,14 +35,18 @@ In the terminal while being in the repo's root.
 After bringing up the container the assigned name should be `usbemani_buildenv` and it will mount the root of the repo into `/root/usbemani`
 
 **Q:** Why mount instead of cloning the repo?
+
 **A:** Mostly because I can make immediate code changes outside the container and push changes when I need it.
+
 **Q:** Why docker?
+
 **A:** I don't like cluttering up my main system and using docker makes it easy, consistent and clean because I can bring down the container when I'm done.
 *Is it ideal? No clue, but it works and it's what I do. If you have a better solution do send a PR so I can learn*
 
 ## FAQ
 
 **Q:** How do I change the name of my PCB
+
 **A:** In `layouts/default/infecta/pragmatism/config.h` look for:
 ```
 #define USB_STRING_VENDOR_USBEMANI  "Infecta"
