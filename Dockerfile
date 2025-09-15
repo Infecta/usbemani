@@ -4,8 +4,8 @@ FROM ubuntu:22.04
 # Prevent interactive prompts during package installs
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Update apt and install basic tools
-RUN apt update && apt upgrade -y && \
+# Update apt repo and install basic tools
+RUN apt update && \
     apt install -y git make cmake curl tar bzip2 software-properties-common && \
     add-apt-repository ppa:deadsnakes/ppa && apt update && \
     apt install -y python3 python3-pip && \
