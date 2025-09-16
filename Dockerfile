@@ -22,7 +22,7 @@ RUN tar -C /opt/gcc-arm-none-eabi/ -xf gcc-arm-none-eabi-toolchain.tar --strip-c
 # Commit toolchain to PATH
 RUN echo 'export PATH=$PATH:/opt/gcc-arm-none-eabi/bin' >> /root/.profile
 # Discovered build errors if when clean building
-RUN echo "PICO_TOOLCHAIN_PATH=/opt/gcc-arm-none-eabi/bin/" >> /root/.profile
+RUN echo "export PICO_TOOLCHAIN_PATH=/opt/gcc-arm-none-eabi/bin/" >> /root/.profile
 
 # Might as well make it look nice when you log in right?
 # I couldn't figure out how to do a single-liner.
