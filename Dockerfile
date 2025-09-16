@@ -22,6 +22,23 @@ RUN tar -C /opt/gcc-arm-none-eabi/ -xf gcc-arm-none-eabi-toolchain.tar --strip-c
 # Commit toolchain to PATH
 RUN echo 'export PATH=$PATH:/opt/gcc-arm-none-eabi/bin' >> /root/.profile
 
+# Might as well make it look nice when you log in right?
+# I couldn't figure out how to do a single-liner.
+RUN echo "================================" >> /root/.profile
+RUN echo "**usbemani-buildenv**" >> /root/.profile
+RUN echo "================================" >> /root/.profile
+RUN echo "Welcome!" >> /root/.profile
+RUN echo "I assume you're reading or have read the documentation" >> /root/.profile
+RUN echo "https://github.com/Infecta/usbemani" >> /root/.profile
+RUN echo "If not it's 'make default/infecta/pragmatism'" >> /root/.profile
+RUN echo "================================" >> /root/.profile
+
+# Delete pico toolchain tarball
+RUN rm /root/gcc-arm-none-eabi-toolchain.tar
+
+# Set default working directory when user shells into the container
+WORKDIR /root/usbemani
+
 # Keep container running with bash by default
 CMD ["/bin/bash"]
 
